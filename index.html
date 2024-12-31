@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
+    <a href="/index.html" class="close-btn" title="Go to Homepage">
+      <i class="fa-solid fa-xmark"></i>
+    </a>
     <div class="choices">
       <img
         src="/images/rock.jpeg"
@@ -21,16 +28,17 @@
         id="paper"
         class="img"
         name="paper"
-        alt="rock"
+        alt="paper"
       />
       <img
         src="/images/scissor.jpeg"
-        id="scissor"
-        name="scissor"
+        id="scissors"
+        name="scissors"
         class="img"
-        alt="rock"
+        alt="scissors"
       />
     </div>
+
     <div class="score-board">
       <div class="score">
         <p id="user-score">0</p>
@@ -42,9 +50,15 @@
       </div>
     </div>
 
-    <div class="msg-container">
-      <p id="msg">Play your move</p>
+    <!-- Display User and Computer Choices -->
+    <div class="choices-display">
+      <p id="user-choice">Your choice:</p>
+      <p id="comp-choice">Computer's choice:</p>
     </div>
+
+    <!-- Countdown Display -->
+    <div id="countdown" style="font-size: 1.5rem; margin-top: 20px"></div>
+
     <script src="/script.js"></script>
   </body>
 </html>

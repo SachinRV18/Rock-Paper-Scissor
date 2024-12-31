@@ -12,7 +12,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   line-height: 6rem;
-  /* line-height: 6rem;  // based on line height added the css */
 }
 
 .img {
@@ -30,7 +29,6 @@ h1 {
 .img:hover {
   cursor: pointer;
   transform: scale(1.05);
-  /* transform: scale(1.05); //function only scales in 2D */
   border: 1px solid black;
 }
 
@@ -46,24 +44,8 @@ h1 {
 #comp-score {
   font-size: 4rem;
 }
-.msg-container {
-  margin-top: 3rem;
-}
-
-#msg {
-  background-color: #0d0d3f;
-  color: white;
-  height: 50px;
-  font-size: 2rem;
-  display: inline;
-  border-radius: 1rem;
-  padding: 1rem;
-}
 
 @media screen and (max-width: 485px) {
-  #msg {
-    font-size: 1rem;
-  }
   h1 {
     font-size: 3rem;
   }
@@ -79,4 +61,43 @@ h1 {
   h1 {
     font-size: 1rem;
   }
+}
+
+.choices-display {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#user-choice,
+#comp-choice {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#countdown {
+  font-size: 1.5rem;
+  color: #0d0d3f;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* Close button styles */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn i {
+  line-height: 0;
 }
